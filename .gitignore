@@ -1,0 +1,21 @@
+# 📦 Node.js
+node_modules/
+package-lock.json
+
+# 🧪 Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# 🔒 Arquivos sensíveis (ex: tokens, configs locais)
+cypress.env.json
+
+# 🛠️ Editor e sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 📁 Logs e arquivos temporários
+*.log
+*.tmp
