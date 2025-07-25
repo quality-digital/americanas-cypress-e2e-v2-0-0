@@ -83,7 +83,10 @@ MAJOR.MINOR.PATCH  → Exemplo: 1.0.0
 ```
 
 ---
+## 📘 Referência de Commits
 
+Este projeto segue o padrão de mensagens de commit conhecido como [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/), que facilita a padronização, automação e rastreabilidade das alterações no repositório.
+---
 ## 🌿 Padrão de Branches
 
 - `feat/`: Novos testes ou funcionalidades
