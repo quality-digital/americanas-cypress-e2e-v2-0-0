@@ -1,7 +1,10 @@
-import { faker } from '@faker-js/faker'
+const path = require('path');
+const cpfs = require(path.resolve(__dirname, '../../fixtures/cpfs.json'));
+const { faker } = require('@faker-js/faker');
 
-export const fakeUser = {
+const fakeUser = {
   name: faker.person.fullName(),
   email: faker.internet.email(),
-  cpf: faker.number.int({ min: 10000000000, max: 99999999999 }).toString()
-}
+  cpf: cpfs.validCpfs[Math.floor(Math.random() * cpfs.validCpfs.length)]
+};
+
