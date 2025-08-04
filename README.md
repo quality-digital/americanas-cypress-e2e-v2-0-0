@@ -67,9 +67,11 @@ npm run test:api      # Executa testes de API
 
 ## 📋 Testes Automatizados Disponíveis
 
-| Cenário              | Descrição                                                                 | Local do arquivo                          | Comando individual                                                          |
-|----------------------|---------------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------|
-| ✅ Verificação da Home | Garante que a home da Americanas carrega corretamente e a logo está presente no DOM | `cypress/e2e/ui_tests/home.cy.js` | `npx cypress run --spec "cypress/e2e/ui_tests/home.cy.js"` |
+| Cenário                          | Descrição                                                                                      | Local do arquivo                          | Comando individual                                                           |
+|----------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------------|
+| ✅ Verificação da Home           | Garante que a home da Americanas carrega corretamente e a logo está presente no DOM           | `cypress/e2e/ui_tests/home.cy.js`         | `npx cypress run --spec "cypress/e2e/ui_tests/home.cy.js"`                   |
+| ✅ Busca de Produto              | Valida que a busca por um produto exibe corretamente os resultados com base no SKU esperado   | `cypress/e2e/ui_tests/search.cy.js`       | `npx cypress run --spec "cypress/e2e/ui_tests/search.cy.js"`                 |
+| ✅ Acesso à PDP pela Busca       | Acessa uma PDP via listagem de busca e valida a presença do título, preço e botão de compra   | `cypress/e2e/ui_tests/pdp.cy.js`          | `npx cypress run --spec "cypress/e2e/ui_tests/pdp.cy.js"`                    |
 
 > ℹ️ Mais cenários serão adicionados conforme os testes evoluírem.
 
