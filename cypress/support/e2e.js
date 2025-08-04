@@ -17,3 +17,4 @@
 import 'cypress-plugin-xhr-toggle'
 import 'cypress-axe'
 import 'cypress-mochawesome-reporter/register'
+import './commands';

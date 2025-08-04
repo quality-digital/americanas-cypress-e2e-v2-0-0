@@ -2,6 +2,12 @@
 
 Todos os formatos seguem o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [1.2.0] - 2025-08-04
+### Adicionado
+- Nova branch `feat/product-search-test` criada para desenvolvimento de testes automatizados relacionados à busca de produtos
+- Teste baseado na SKU do produto
+
+
 ## [1.1.0] - 2025-07-30
 ### Adicionado
 - Estrutura inicial do projeto com Cypress
