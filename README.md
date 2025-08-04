@@ -109,3 +109,4 @@ Este projeto segue o padrão de mensagens de commit conhecido como [Conventional
 ### Plugins
 
 - Controle do comportamento das solicitações XHR durante a execução dos testes [cypress-plugin-xhr-toggle](https://www.npmjs.com/package/cypress-plugin-xhr-toggle)
+
