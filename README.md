@@ -65,6 +65,18 @@ npm run test:api      # Executa testes de API
 
 ---
 
+## 📋 Testes Automatizados Disponíveis
+
+| Cenário              | Descrição                                                                 | Local do arquivo                          | Comando individual                                                          |
+|----------------------|---------------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------|
+| ✅ Verificação da Home | Garante que a home da Americanas carrega corretamente e a logo está presente no DOM | `cypress/e2e/ui_tests/home.cy.js` | `npx cypress run --spec "cypress/e2e/ui_tests/home.cy.js"` |
+
+> ℹ️ Mais cenários serão adicionados conforme os testes evoluírem.
+
+
+
+---
+
 ## 🧩 Plugins sugeridos
 
 - [`cypress-plugin-xhr-toggle`](https://www.npmjs.com/package/cypress-plugin-xhr-toggle) – Controle de requisições XHR
@@ -97,3 +109,4 @@ Este projeto segue o padrão de mensagens de commit conhecido como [Conventional
 ### Plugins
 
 - Controle do comportamento das solicitações XHR durante a execução dos testes [cypress-plugin-xhr-toggle](https://www.npmjs.com/package/cypress-plugin-xhr-toggle)
+
