@@ -5,7 +5,9 @@ Todos os formatos seguem o padrão [Keep a Changelog](https://keepachangelog.com
 ## [1.2.0] - 2025-08-04
 ### Adicionado
 - Nova branch `feat/product-search-test` criada para desenvolvimento de testes automatizados relacionados à busca de produtos
-- Teste baseado na SKU do produto
+- Teste `search.cy.js` que realiza a busca por um produto na Americanas e valida o resultado por SKU
+- Teste `pdp.cy.js` que acessa a PDP a partir da busca e valida presença do título, preço e botão de compra
+- Atualização do `README.md` com a documentação dos novos cenários
 
 
 ## [1.1.0] - 2025-07-30
