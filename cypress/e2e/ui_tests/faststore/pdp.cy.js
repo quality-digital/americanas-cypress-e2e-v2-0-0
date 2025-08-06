@@ -30,18 +30,17 @@ devices.forEach(({ name, viewport, userAgent }) => {
       cy.get('input[placeholder*="busque"]').should('be.visible').type(productName, { delay: 100 });
       cy.get('button[data-testid="fs-search-button"]').last().click({ force: true });
 
-      cy.get('button[data-testid="fs-search-button"]').last().click({ force: true });
       cy.url().should('include', '?q=');
 
       cy.get(`[data-sku="${expectedSku}"]`, { timeout: 15000 })
-      .should('exist')
-      .click({ force: true });
+        .should('exist')
+        .click({ force: true });
 
       cy.url().should('include', '/p');
 
       cy.get('h1.ProductInfoCenter_title__hdTX_').should('be.visible');
       cy.get('div.ProductPrice_productPrice__vpgdo').should('contain', 'R$');
       cy.get('div[data-fs-button-wrapper="true"]').should('contain', 'Comprar');
-
+    });
   });
 });
