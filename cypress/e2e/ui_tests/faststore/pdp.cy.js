@@ -30,7 +30,11 @@ devices.forEach(({ name, viewport, userAgent }) => {
       cy.get('input[placeholder*="busque"]').should('be.visible').type(productName, { delay: 100 });
       cy.get('button[data-testid="fs-search-button"]').last().click({ force: true });
 
-      cy.get(`[data-sku="${expectedSku}"]`, { timeout: 15000 }).should('exist').click({ force: true });
+      cy.url().should('include', '?q=');
+
+      cy.get(`[data-sku="${expectedSku}"]`, { timeout: 15000 })
+        .should('exist')
+        .click({ force: true });
 
       cy.url().should('include', '/p');
 
