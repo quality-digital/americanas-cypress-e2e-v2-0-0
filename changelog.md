@@ -2,6 +2,15 @@
 
 Todos os formatos seguem o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
+## [Unreleased]
+
+## [1.2.1] - 2025-08-06
+### Corrigido
+- Suporte completo a testes automatizados em dispositivos mobile utilizando `viewport` e `user-agent` para simulação realista.
+- Conflito de merge no arquivo `pdp.cy.js` resolvido, unificando corretamente os blocos de verificação de URL e validações da PDP.
+- Ajuste no fluxo de clique e verificação de URL após a busca do produto para garantir consistência nos testes em diferentes dispositivos.
+
+
 ## [1.2.0] - 2025-08-04
 ### Adicionado
 - Nova branch `feat/product-search-test` criada para desenvolvimento de testes automatizados relacionados à busca de produtos
