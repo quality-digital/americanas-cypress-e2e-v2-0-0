@@ -4,6 +4,11 @@ Todos os formatos seguem o padrão [Keep a Changelog](https://keepachangelog.com
 
 ## [Unreleased]
 
+## [1.4.0] - 2025-08-07
+### Adicionado
+- Nova branch feat/jira-1034 com teste automatizado de validação de produto adicionado ao carrinho.
+
+
 ## [1.2.1] - 2025-08-06
 ### Corrigido
 - Suporte completo a testes automatizados em dispositivos mobile utilizando `viewport` e `user-agent` para simulação realista.
