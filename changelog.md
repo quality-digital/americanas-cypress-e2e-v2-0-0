@@ -4,8 +4,12 @@ Todos os formatos seguem o padrão [Keep a Changelog](https://keepachangelog.com
 
 ## [Unreleased]
 
+## [1.4.0] - 2025-08-07
+### Adicionado
+- Nova branch `feat/jira-1034` com teste automatizado de validação de produto adicionado ao carrinho.
+
 ## [1.3.0] - 2025-08-06
-### Adicionado 
+### Adicionado
 - Nova branch `feat/jira-1033` com teste automatizado de adição de produto ao carrinho via PDP.
 - Tratamento de modais de confirmação de variação de produto na PDP.
 - Atualização do `README.md` com a documentação dos novos cenários.

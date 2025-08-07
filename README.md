@@ -67,15 +67,14 @@ npm run test:api      # Executa testes de API
 
 ## 📋 Testes Automatizados Disponíveis
 
-| Cenário                          | Descrição                                                                                      | Local do arquivo                          | Comando individual                                                           |
-|----------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------------|
-| ✅ Verificação da Home           | Garante que a home da Americanas carrega corretamente e a logo está presente no DOM           | `cypress/e2e/ui_tests/home.cy.js`         | `npx cypress run --spec "cypress/e2e/ui_tests/home.cy.js"`                   |
-| ✅ Busca de Produto              | Valida que a busca por um produto exibe corretamente os resultados com base no SKU esperado   | `cypress/e2e/ui_tests/search.cy.js`       | `npx cypress run --spec "cypress/e2e/ui_tests/search.cy.js"`                 |
-| ✅ Acesso à PDP pela Busca       | Acessa uma PDP via listagem de busca e valida a presença do título, preço e botão de compra   | `cypress/e2e/ui_tests/pdp.cy.js`          | `npx cypress run --spec "cypress/e2e/ui_tests/pdp.cy.js"`                    |
-| ✅ Adicionar Produto ao Carrinho | Valida que um produto pode ser adicionado ao carrinho via PDP e confirma exibição no mini-cart | `cypress/e2e/ui_tests/add-to-cart.cy.js`  | `npx cypress run --spec "cypress/e2e/ui_tests/add-to-cart.cy.js"`           |
+| Cenário                          | Descrição                                                                                      | Local do arquivo                                       | Comando individual                                                                      |
+|----------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| ✅ Verificação da Home           | Garante que a home da Americanas carrega corretamente e a logo está presente no DOM           | `cypress/e2e/ui_tests/home.cy.js`                      | `npx cypress run --spec "cypress/e2e/ui_tests/home.cy.js"`                             |
+| ✅ Busca de Produto              | Valida que a busca por um produto exibe corretamente os resultados com base no SKU esperado   | `cypress/e2e/ui_tests/search.cy.js`                    | `npx cypress run --spec "cypress/e2e/ui_tests/search.cy.js"`                            |
+| ✅ Acesso à PDP pela Busca       | Acessa uma PDP via listagem de busca e valida a presença do título, preço e botão de compra   | `cypress/e2e/ui_tests/pdp.cy.js`                       | `npx cypress run --spec "cypress/e2e/ui_tests/pdp.cy.js"`                               |
+| ✅ Adicionar ao Carrinho via PDP | Busca o produto, acessa a PDP, adiciona ao carrinho e valida o mini-carrinho                  | `cypress/e2e/ui_tests/faststore/minicart-access.cy.js` | `npx cypress run --spec "cypress/e2e/ui_tests/faststore/minicart-access.cy.js"`         |
 
-> ℹ️ Todos os testes são executados para os dispositivos: **Desktop**, **iPhone 16 Pro Max** e **Samsung Galaxy S23**.
-
+> ℹ️ Todos os testes são executados para os dispositivos: **Desktop**, **iPhone 16 Pro Max** e **Samsung Galaxy S23**.  
 > ℹ️ Mais cenários serão adicionados conforme os testes evoluírem.
 
 ---
