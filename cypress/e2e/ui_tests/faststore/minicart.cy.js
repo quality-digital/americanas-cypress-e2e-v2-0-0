@@ -42,7 +42,7 @@ devices.forEach(({ name, viewport, userAgent }) => {
 
       cy.get('h1.ProductInfoCenter_title__hdTX_').should('be.visible');
       cy.get('div.ProductPrice_productPrice__vpgdo').should('contain', 'R$');
-      cy.get('div[data-fs-button-wrapper="true"]').should('contain', 'Comprar');
+      cy.get('[data-testid="buy-button"]').should('be.visible');
 
       cy.contains(/comprar/i).click({ force: true });
 
@@ -55,7 +55,7 @@ devices.forEach(({ name, viewport, userAgent }) => {
       cy.url().then((url) => {
         if (url.includes('/carrinho')) {
           cy.url().should('include', '/carrinho');
-          cy.get('div').should('contain', productName.split(' ')[0]); // Valida presença do nome parcial
+          cy.get('div').should('contain', productName.split(' ')[0]); 
         } else {
           cy.get('[data-testid="fs-cart-sidebar"]', { timeout: 10000 }).should('be.visible');
           cy.get('[data-testid="fs-cart-sidebar"]').should('contain', productName.split(' ')[0]);
